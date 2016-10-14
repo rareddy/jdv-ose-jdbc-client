@@ -1,0 +1,30 @@
+<html>
+	<body>
+		<h2 align='left'>JDBC Query Client</h2>
+		<form action='jdbc' method='post' target='Results'>
+			<table length='50%' cellspacing='2' cellpadding='5' align='left' border='0'>
+				<tr>
+					<td></td>
+					<td><label align='right'>DataSource:(JNDI Name)</label></td>
+					<td><input type='text' name='datasource' value="java:/jdv-in-ose"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><label align='right'>SQL:</label></td>
+					<td><textarea name='sql' rows='2' cols='50'></textarea></td>				
+				</tr>
+				<tr>
+					<td></td>
+					<td><label align='right'>Show Only Fetch Times</label></td>
+					<td><input type='checkbox' name='timesonly' value='yes'/></td>									
+				</tr>				
+				<tr>
+					<td></td>					
+					<td></td>
+					<td><input type='submit' name='submit'></td>									
+				</tr>	
+							
+			</table>
+		</form>
+	</body>
+</html>

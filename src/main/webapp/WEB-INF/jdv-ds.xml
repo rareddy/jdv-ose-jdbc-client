@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datasources xmlns="http://www.jboss.org/ironjacamar/schema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.jboss.org/ironjacamar/schema http://docs.jboss.org/ironjacamar/schema/datasources_1_0.xsd">
+    <datasource jndi-name="java:/jdv-in-ose"
+        pool-name="jdv-in-ose" enabled="true"
+        use-java-context="true">
+        <connection-url>jdbc:teiid:sqlserver@mms://jdbc-jdv-app-jdv-kitchen-sink.router.default.svc.cluster.local:31443</connection-url>
+        <driver>teiid-9.0.0.Final-jdbc.jar</driver>
+        <security>
+            <user-name>user</user-name>
+            <password>redhat1!</password>
+        </security>
+    </datasource>
+</datasources>

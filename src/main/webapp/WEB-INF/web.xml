@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>JDV JDBC Query</display-name>
+
+	<servlet>
+		<servlet-name>JDBCQueryServlet</servlet-name>
+		<display-name>JDBC Query Client</display-name>
+		<servlet-class>org.teiid.web.JDBCQueryServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>JDBCQueryServlet</servlet-name>
+		<url-pattern>/jdbc</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list id="WelcomeFileList">
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
+</web-app>
