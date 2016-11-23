@@ -5,10 +5,10 @@
     <datasource jndi-name="java:/jdv-in-ose"
         pool-name="jdv-in-ose" enabled="true"
         use-java-context="true">
-        <connection-url>jdbc:teiid:sqlserver@mms://jdbc-jdv-app-jdv-kitchen-sink.router.default.svc.cluster.local:31443</connection-url>
+        <connection-url>jdbc:teiid:sqlserver@mms://jdbc-datavirt-app-jdv-demo.router.default.svc.cluster.local:31443</connection-url>
         <driver>teiid-9.0.0.Final-jdbc.jar</driver>
         <security>
-            <user-name>user</user-name>
+            <user-name>teiidUser</user-name>
             <password>redhat1!</password>
         </security>
     </datasource>
